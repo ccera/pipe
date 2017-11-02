@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0)
+
+project (PIPE)
+
+add_subdirectory(pipe)
+add_subdirectory(bin)
