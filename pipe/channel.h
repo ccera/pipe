@@ -1,3 +1,4 @@
+#pragma once
 #define ASIO_STANDALONE
 #define ASIO_HEADER_ONLY
 #define ASIO_HAS_STD_CHRONO
@@ -5,15 +6,16 @@
 #include <iostream>
 #include <asio.hpp>
 
-#include "channel.h"
-
 namespace pipe
 {
 
-    class Pipe
+    class Channel
     {
     public:
-        Pipe();
+        Channel(asio::ip::tcp::socket&&  socket);
+
+    private:
+        asio::ip::tcp::socket m_socket;
     };
 
 }

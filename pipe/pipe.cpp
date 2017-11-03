@@ -3,6 +3,8 @@
 #include <thread>
 #include <chrono>
 
+using namespace::pipe;
+
 Pipe::Pipe()
 {
     std::cout << "Pipe constructor, wait for 5 sec." << std::endl;
