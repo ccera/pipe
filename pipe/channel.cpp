@@ -1,6 +1,6 @@
 #include "channel.h"
 
-using namespace pipe;
+using namespace pipex;
 
 Channel::Channel(asio::ip::tcp::socket&& socket)
     : m_socket(std::move(socket))

@@ -6,7 +6,7 @@
 #include <iostream>
 #include <asio.hpp>
 
-namespace pipe
+namespace pipex
 {
 
     class Channel

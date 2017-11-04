@@ -1,6 +1,6 @@
-#include "Buffer.h"
+#include "buffer.h"
 
-using namespace pipe;
+using namespace pipex;
 
 Buffer::Buffer()
 {

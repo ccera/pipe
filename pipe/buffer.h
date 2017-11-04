@@ -1,7 +1,8 @@
 #pragma once
+
 #include <vector>
 
-namespace pipe
+namespace pipex
 {
 
     class Buffer
