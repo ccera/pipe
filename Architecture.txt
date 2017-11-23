@@ -1,0 +1,23 @@
+IChannel
+    public:
+        void AddHandler(IHandler)
+        void OnCreated()
+        void OnClosed()
+        
+    private:
+        Socket
+        Buffer
+        
+        
+IDownstreamHandler
+    public:
+        void OnChannelCreated()
+        bool OnRead()
+        void OnChannelClosed()
+        
+IUpstreamHandler
+    public:
+        void OnChannelCreated()
+        bool Write()
+        void OnChannelClosed()
+        
